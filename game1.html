@@ -1,0 +1,271 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+var c1=0;
+ $(".d1").click(function(){
+  var a=$(".d1").text();
+  var b=$(".d2").text();
+  var c=$(".d4").text();
+	
+    if(b.length==0)
+{
+   $(".d2").text(a);
+    $(".d1").text("");  
+$(".move").text(++c1); 	
+}
+   if(c.length==0)
+{
+   $(".d4").text(a);
+   $(".d1").text("");
+$(".move").text(++c1);
+}
+});
+
+$(".d2").click(function(){
+  var a=$(".d2").text();
+  var b=$(".d3").text();
+  var c=$(".d1").text();
+  var d=$(".d5").text();
+    if(b.length==0)
+{
+   $(".d3").text(a);
+    $(".d2").text("");   	
+$(".move").text(++c1);
+}
+   if(c.length==0)
+{
+   $(".d1").text(a);
+   $(".d2").text("");
+$(".move").text(++c1);
+}
+   if(d.length==0)
+{
+   $(".d5").text(a);
+   $(".d2").text("");
+$(".move").text(++c1);
+}
+});
+
+$(".d3").click(function(){
+  var a=$(".d3").text();
+  var b=$(".d2").text();
+  var c=$(".d6").text();
+    if(b.length==0)
+{
+   $(".d2").text(a);
+    $(".d3").text("");   	
+$(".move").text(++c1);
+}
+   if(c.length==0)
+{
+   $(".d6").text(a);
+   $(".d3").text("");
+$(".move").text(++c1);
+}
+});
+
+$(".d4").click(function(){
+  var a=$(".d4").text();
+  var b=$(".d1").text();
+  var c=$(".d5").text();
+  var d=$(".d7").text();
+    if(b.length==0)
+{
+   $(".d1").text(a);
+    $(".d4").text("");   	
+$(".move").text(++c1);
+}
+   if(c.length==0)
+{
+   $(".d5").text(a);
+   $(".d4").text("");
+$(".move").text(++c1);
+}
+   if(d.length==0)
+{
+   $(".d7").text(a);
+   $(".d4").text("");
+$(".move").text(++c1);
+}
+});
+
+$(".d5").click(function(){
+  var a=$(".d5").text();
+  var b=$(".d2").text();
+  var c=$(".d4").text();
+  var d=$(".d6").text();
+  var e=$(".d8").text();
+    if(b.length==0)
+{
+   $(".d2").text(a);
+    $(".d5").text("");   	
+$(".move").text(++c1);
+}
+   if(c.length==0)
+{
+   $(".d4").text(a);
+   $(".d5").text("");
+$(".move").text(++c1);
+}
+   if(d.length==0)
+{
+   $(".d6").text(a);
+   $(".d5").text("");
+$(".move").text(++c1);
+}
+   if(e.length==0)
+{
+   $(".d8").text(a);
+   $(".d5").text("");
+$(".move").text(++c1);
+}
+});
+
+$(".d6").click(function(){
+  var a=$(".d6").text();
+  var b=$(".d5").text();
+  var c=$(".d3").text();
+  var d=$(".d9").text();
+    if(b.length==0)
+{
+   $(".d5").text(a);
+    $(".d6").text("");   	
+$(".move").text(++c1);
+}
+
+   if(c.length==0)
+{
+   $(".d3").text(a);
+   $(".d6").text("");
+$(".move").text(++c1);
+}
+   if(d.length==0)
+{
+   $(".d9").text(a);
+   $(".d6").text("");
+$(".move").text(++c1);
+}
+});
+
+$(".d7").click(function(){
+  var a=$(".d7").text();
+  var b=$(".d4").text();
+  var c=$(".d8").text();
+  var d=$(".d9").text();
+    if(b.length==0)
+{
+   $(".d4").text(a);
+    $(".d7").text("");   	
+$(".move").text(++c1);
+}
+   if(c.length==0)
+{
+   $(".d8").text(a);
+   $(".d7").text("");
+$(".move").text(++c1);
+}
+   if(d.length==0)
+{
+   $(".d9").text(a);
+   $(".d7").text("");
+$(".move").text(++c1);
+}
+});
+
+$(".d8").click(function(){
+  var a=$(".d8").text();
+  var b=$(".d9").text();
+  var c=$(".d7").text();
+  var d=$(".d5").text();
+    if(b.length==0)
+{
+   $(".d9").text(a);
+    $(".d8").text("");   	
+$(".move").text(++c1);
+}
+   if(c.length==0)
+{
+   $(".d7").text(a);
+   $(".d8").text("");
+$(".move").text(++c1);
+}
+   if(d.length==0)
+{
+   $(".d5").text(a);
+   $(".d8").text("");
+$(".move").text(++c1);
+}
+});
+
+$(".d9").click(function(){
+  var a=$(".d9").text();
+  var b=$(".d6").text();
+  var c=$(".d8").text();
+    if(b.length==0)
+{
+   $(".d6").text(a);
+    $(".d9").text("");   	
+$(".move").text(++c1);
+}
+   if(c.length==0)
+{
+   $(".d8").text(a);
+   $(".d9").text("");
+$(".move").text(++c1);
+}
+});
+$("button").click(function(){
+if($(".d1").text()==1 && $(".d2").text()==2 && $(".d3").text()==3 && $(".d4").text()==4 && $(".d5").text()==5 && $(".d6").text()==6 && $(".d7").text()==7 && $(".d8").text()==8)
+{
+$(".result").text(" YOU WON with "+c1+ " moves");
+$(".result").slideToggle(2000);
+}
+else
+{
+$(".result").text("NOT COMPLETED");
+$(".result").hide(3000);
+}
+
+});
+});
+</script>
+<style>
+div
+{
+background-image:linear-gradient(purple,black);
+height:25px;
+width:25px;
+border-color:green;
+border-radius:5px;
+text-align:center;
+color:white;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+<h1 align="center">GAME</h1>
+<h3 align="center">MOVES: <div class="move" align="center" >0</div></h3>
+<table align="center" padding="20px">
+<tr>
+<td ><div class="d1" >2</div></td>
+<td><div class="d2" >5</div></td>
+<td ><div class="d3" >7</div></td>
+</tr>
+<tr>
+<td ><div class="d4">6</div></td>
+<td><div class="d5" >1</div></td>
+<td><div class="d6" >8</div></td>
+</tr>
+<tr>
+<td><div class="d7"></div></td>
+<td><div class="d8">3</div></td>
+<td><div class="d9">4</div></td>
+</tr>
+</table>
+<button>check</button>
+<div class="result" style="width:100%;color:black;background-image:linear-gradient(white,white)"></div>
+</body>
+</html>
